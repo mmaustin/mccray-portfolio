@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center border">
-      <p>Check</p>
+    <div className=" text-xl flex flex-col items-center border">
+      <p className="">Check</p>
       <p>Flex</p>
     </div>
   );
