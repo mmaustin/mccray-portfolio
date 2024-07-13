@@ -14,8 +14,10 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-8">
           <Navbar />
           <Link href="/contact">
-            <button className="">Contact</button>
+            <button className="">Connect</button>
           </Link>
+        </div>
+        <div className="flex lg:hidden">
         </div>
       </div>
     </header>
