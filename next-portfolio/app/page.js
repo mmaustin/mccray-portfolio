@@ -29,7 +29,7 @@ const HomePage = () => {
             <Photo />
           </div>
         </div>
-        <div className="h-[150px] mb-6 border">
+        <div className="">
           <MiniInfo />
         </div>
       </div>

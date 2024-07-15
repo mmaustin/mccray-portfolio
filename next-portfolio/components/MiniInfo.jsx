@@ -7,28 +7,24 @@ const information = [
   },
   {
     header: "Coding Advocate",
-    info: "Tutored 100s of Students"
+    info: "Hundreds Tutored"
   },
   {
     header: "Github Commits",
     info: "Over 4500"
-  },
-  {
-    header: "Latest Challenge",
-    info: "Typescript"
   }
 ];
 
 const MiniInfo = () => {
   return (
-    <section>
+    <section className="pt-4 pb-12 lg:pt-0 lg:pb-8">
       <div className="container mx-auto">
-        <div>
+        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto lg:max-w-none">
           {information.map((obj, i) => {
             return (
               <div key={i} className="">
-                <p>{obj.header}</p>
-                <p>{obj.info}</p>
+                <p className="text-xl lg:text-xl font-extrabold">{obj.header}:</p>
+                <p className={`${obj.info.length ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-accent/50`}>{obj.info}</p>
               </div>
             )
           })}
