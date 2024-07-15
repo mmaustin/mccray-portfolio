@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import MiniInfo from "@/components/MiniInfo";
 import Photo from "@/components/Photo";
 import SocialMedia from "@/components/SocialMedia";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,7 @@ import { FiDownload } from "react-icons/fi";
 
 const HomePage = () => {
   return (
-    <section className="h-full border border-accent">
+    <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           <div className="text-center lg:text-left order-2 lg:order-none">
@@ -29,7 +30,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="h-[150px] mb-6 border">
-          some stuff in here
+          <MiniInfo />
         </div>
       </div>
     </section>
