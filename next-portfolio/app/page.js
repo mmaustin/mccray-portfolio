@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Photo from "@/components/Photo";
 import SocialMedia from "@/components/SocialMedia";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,7 @@ import { FiDownload } from "react-icons/fi";
 
 const HomePage = () => {
   return (
-    <section className="h-full">
+    <section className="h-full border border-accent">
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           <div className="text-center lg:text-left order-2 lg:order-none">
@@ -23,11 +24,12 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
-
           <div className="order-1 lg:order-none mb-8 lg:mb-0 rounded-xl border border-accent">
             <Photo />
           </div>
+        </div>
+        <div className="h-[150px] mb-6 border">
+          some stuff in here
         </div>
       </div>
     </section>
