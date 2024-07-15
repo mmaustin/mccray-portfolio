@@ -29,7 +29,7 @@ const Photo = () => {
             // width={100}
             // height={100}
             alt="my photo"
-            className="object-container"
+            className="object-container rounded-xl border border-accent"
           />
         </motion.div>
       </motion.div>
