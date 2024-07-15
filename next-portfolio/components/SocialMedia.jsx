@@ -11,9 +11,9 @@ const SocialMedia = ({ containerStyles, iconStyles }) => {
   return (
     <div className={containerStyles}>{
       socials.map((media, i) => {
-        return <a href={media.path} key={i} className={iconStyles} target="_blank" >{media.icon}</a>
+        return <Link href={media.path} key={i} className={iconStyles} target="_blank" >{media.icon}</Link>
       })
     }</div>
   )
 }
-export default SocialMedia
+export default SocialMedia;
