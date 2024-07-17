@@ -105,15 +105,15 @@ const About = () => {
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul>
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, i) => {
                       return (
-                        <li key={i}>
-                          <span>{item.duration}</span>
-                          <h3>{item.position}</h3>
+                        <li key={i} className="bg-[#232329] h-[185px] lg:h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 border">
+                          <span className="text-accent">{item.duration}</span>
+                          <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                           <div className="">
                             <span></span>
-                            <p>{item.company}</p>
+                            {/* <p>{item.company}</p> */}
                           </div>
                         </li>
                       )
