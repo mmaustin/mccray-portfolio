@@ -71,12 +71,12 @@ const education = {
       completion: "Continuous"
     },
     {
-      institution: "Fordham Law School",
+      institution: "Fordham Law",
       field: "Law",
       completion: "May 2004"
     },
     {
-      institution: "Seton Hall University",
+      institution: "Seton Hall",
       field: "English",
       completion: "May 2000"
     },
@@ -104,11 +104,11 @@ const About = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[200px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, i) => {
                       return (
-                        <li key={i} className="bg-[#232329] h-[185px] lg:h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 border">
+                        <li key={i} className="bg-[#232329] h-[185px] lg:h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                           <div className="">
@@ -122,9 +122,32 @@ const About = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+
             <TabsContent value="education" className="w-full">
-              education
+              <div className="flex flex-col gap-[30px] text-center lg:text-left">
+                <h3 className="text-4xl font-bold">{education.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0">
+                  {education.description}
+                </p>
+                <ScrollArea className="h-[200px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {education.items.map((item, i) => {
+                      return (
+                        <li key={i} className="bg-[#232329] h-[185px] lg:h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                          <span className="text-accent">{item.completion}</span>
+                          <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{item.field}</h3>
+                          <div className="flex items-center gap-3">
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <p>{item.institution}</p>
+                          </div>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
             </TabsContent>
+
             <TabsContent value="about" className="w-full">
               about
             </TabsContent>
