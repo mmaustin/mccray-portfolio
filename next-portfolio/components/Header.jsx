@@ -14,9 +14,9 @@ const Header = () => {
         </Link>
         <div className="hidden lg:flex items-center gap-8">
           <Navbar />
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <Button className="">Connect</Button>
-          </Link>
+          </Link> */}
         </div>
         <div className="lg:hidden">
           <MobileNav />
