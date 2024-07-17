@@ -6,6 +6,7 @@ import { TabsList, Tabs, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { TabsContent } from "@radix-ui/react-tabs";
 
 
 const about = {
@@ -96,7 +97,38 @@ const About = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
-          <div className="min-h-[70vh] w-full">content</div>
+          <div className="min-h-[70vh] w-full">
+            <TabsContent value="experience" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center lg:text-left">
+                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0">
+                  {experience.description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul>
+                    {experience.items.map((item, i) => {
+                      return (
+                        <li key={i}>
+                          <span>{item.duration}</span>
+                          <h3>{item.position}</h3>
+                          <div className="">
+                            <span></span>
+                            <p>{item.company}</p>
+                          </div>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            <TabsContent value="education" className="w-full">
+              education
+            </TabsContent>
+            <TabsContent value="about" className="w-full">
+              about
+            </TabsContent>
+          </div>
         </Tabs>
       </div>
     </motion.div>
