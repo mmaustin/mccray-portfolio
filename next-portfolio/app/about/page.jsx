@@ -2,6 +2,10 @@
 
 import { MdWorkOutline } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
+import { TabsList, Tabs, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from "framer-motion";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 
 const about = {
@@ -79,11 +83,23 @@ const education = {
 };
 
 
-
-
 const About = () => {
   return (
-    <div className="">lorem</div>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .75, duration: 0.4, ease: "easeIn" } }} className="min-h-[80vh] flex items-center justify-center py-12 lg:py-0">
+      <div className="container mx-auto">
+        <Tabs
+          defaultValue="experience"
+          className="flex flex-col lg:flex-row gap-[60px]"
+        >
+          <TabsList>
+            <TabsTrigger>Experience</TabsTrigger>
+            <TabsTrigger>Education</TabsTrigger>
+            <TabsTrigger>About Me</TabsTrigger>
+          </TabsList>
+          <div className="">content</div>
+        </Tabs>
+      </div>
+    </motion.div>
   )
 }
 export default About;

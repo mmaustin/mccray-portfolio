@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
+import { Dialog } from "@radix-ui/react-dialog";
 
 const links = [
   {
