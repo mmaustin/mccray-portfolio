@@ -91,12 +91,12 @@ const About = () => {
           defaultValue="experience"
           className="flex flex-col lg:flex-row gap-[60px]"
         >
-          <TabsList>
-            <TabsTrigger>Experience</TabsTrigger>
-            <TabsTrigger>Education</TabsTrigger>
-            <TabsTrigger>About Me</TabsTrigger>
+          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto lg:mx-0 gap-6" >
+            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
-          <div className="">content</div>
+          <div className="min-h-[70vh] w-full">content</div>
         </Tabs>
       </div>
     </motion.div>
