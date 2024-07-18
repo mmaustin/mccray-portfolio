@@ -33,4 +33,4 @@ const MiniInfo = () => {
     </section>
   )
 }
-export default MiniInfo
+export default MiniInfo;

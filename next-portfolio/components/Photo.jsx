@@ -7,19 +7,19 @@ import Image from "next/image";
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: .75, duration: 0.4, ease: "easeIn" },
-        }}
+      <div
+      // initial={{ opacity: 0 }}
+      // animate={{
+      //   opacity: 1,
+      //   transition: { delay: .75, duration: 0.4, ease: "easeIn" },
+      // }}
       >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 1, duration: 0.4, ease: "easeInOut" }
-          }}
+        <div
+          // initial={{ opacity: 0 }}
+          // animate={{
+          //   opacity: 1,
+          //   transition: { delay: 1, duration: 0.4, ease: "easeInOut" }
+          //}}
           className="w-[298px] h-[298px] mix-blend-lighten">
           <Image
             src="/photo.jpeg"
@@ -31,8 +31,8 @@ const Photo = () => {
             alt="my photo"
             className="object-container rounded-xl border border-accent"
           />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   )
 }

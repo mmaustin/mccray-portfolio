@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetBrainsMono.variable}>
         <Header />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        {/* <PageTransition> */}
+        {children}
+        {/* </PageTransition> */}
         <Footer />
       </body>
     </html>
