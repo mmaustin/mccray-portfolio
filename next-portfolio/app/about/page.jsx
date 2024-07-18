@@ -91,11 +91,11 @@ const skills = {
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html5"
+      name: "html 5"
     },
     {
       icon: <FaCss3 />,
-      name: "css3"
+      name: "css 3"
     },
     {
       icon: <SiJavascript />,
@@ -103,19 +103,19 @@ const skills = {
     },
     {
       icon: <FaNodeJs />,
-      name: "node js"
+      name: "node.js"
     },
     {
       icon: <FaReact />,
-      name: "react"
+      name: "react.js"
     },
     {
       icon: <SiRedux />,
-      name: "redux"
+      name: "redux.js"
     },
     {
       icon: <SiNextdotjs />,
-      name: "next js"
+      name: "next.js"
     },
     {
       icon: <SiMongodb />,
@@ -131,11 +131,11 @@ const skills = {
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwindcss"
+      name: "tailwind.css"
     },
     {
       icon: <SiDaisyui />,
-      name: "daisyui"
+      name: "daisy.ui"
     },
   ]
 }
@@ -154,7 +154,7 @@ const About = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
-            <TabsTrigger value="about">Skills</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
@@ -227,6 +227,21 @@ const About = () => {
               </div>
             </TabsContent>
 
+            <TabsContent value="skills" className="w-full h-full" >
+              <div className="flex flex-col gap-[30px]">
+                <div className="">
+                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <p>{skills.description}</p>
+                </div>
+                <ul>
+                  {skills.skillList.map((skill, i) => {
+                    return (
+                      <li key={i}>{skill.name}</li>
+                    )
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
 
           </div>
         </Tabs>
