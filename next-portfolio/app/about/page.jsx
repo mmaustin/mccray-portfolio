@@ -2,8 +2,6 @@
 
 import { MdWorkOutline } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
-import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb } from "react-icons/si";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -85,60 +83,7 @@ const education = {
   ]
 };
 
-const skills = {
-  title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam tempore saepe maiores quos repellendus hic, ratione animi, ab aliquam repellat, natus quo minus delectus optio labore distinctio unde reprehenderit",
-  skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5"
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3"
-    },
-    {
-      icon: <SiJavascript />,
-      name: "javascript"
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js"
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js"
-    },
-    {
-      icon: <SiRedux />,
-      name: "redux.js"
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js"
-    },
-    {
-      icon: <SiMongodb />,
-      name: "mongodb"
-    },
-    {
-      icon: <SiPostman />,
-      name: "postman"
-    },
-    {
-      icon: <SiPrisma />,
-      name: "prisma"
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css"
-    },
-    {
-      icon: <SiDaisyui />,
-      name: "daisy.ui"
-    },
-  ]
-}
+
 
 
 const About = () => {
@@ -154,7 +99,6 @@ const About = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
@@ -220,33 +164,6 @@ const About = () => {
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
 
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="skills" className="w-full h-full" >
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center lg:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0">{skills.description}</p>
-                </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, i) => {
-                    return (
-                      <li key={i}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-4xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
                       </li>
                     )
                   })}
