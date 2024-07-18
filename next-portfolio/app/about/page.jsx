@@ -2,6 +2,8 @@
 
 import { MdWorkOutline } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
+import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb } from "react-icons/si";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -83,6 +85,61 @@ const education = {
   ]
 };
 
+const skills = {
+  title: "My Skills",
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam tempore saepe maiores quos repellendus hic, ratione animi, ab aliquam repellat, natus quo minus delectus optio labore distinctio unde reprehenderit",
+  skillList: [
+    {
+      icon: <FaHtml5 />,
+      name: "html5"
+    },
+    {
+      icon: <FaCss3 />,
+      name: "css3"
+    },
+    {
+      icon: <SiJavascript />,
+      name: "javascript"
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "node js"
+    },
+    {
+      icon: <FaReact />,
+      name: "react"
+    },
+    {
+      icon: <SiRedux />,
+      name: "redux"
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "next js"
+    },
+    {
+      icon: <SiMongodb />,
+      name: "mongodb"
+    },
+    {
+      icon: <SiPostman />,
+      name: "postman"
+    },
+    {
+      icon: <SiPrisma />,
+      name: "prisma"
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "tailwindcss"
+    },
+    {
+      icon: <SiDaisyui />,
+      name: "daisyui"
+    },
+  ]
+}
+
 
 const About = () => {
   return (
@@ -97,6 +154,7 @@ const About = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
+            <TabsTrigger value="about">Skills</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
@@ -168,6 +226,8 @@ const About = () => {
                 </ul>
               </div>
             </TabsContent>
+
+
           </div>
         </Tabs>
       </div>
