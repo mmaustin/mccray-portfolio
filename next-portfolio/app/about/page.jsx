@@ -88,7 +88,8 @@ const education = {
 
 const About = () => {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .75, duration: 0.4, ease: "easeIn" } }}
+    // <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .75, duration: 0.4, ease: "easeIn" } }}
+    <div
       className="min-h-[80vh] flex items-center justify-center py-12 lg:py-0">
       <div className="container mx-auto">
         <Tabs
@@ -174,7 +175,8 @@ const About = () => {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </div>
+    // {/* </motion.div> */}
   )
 }
 export default About;
