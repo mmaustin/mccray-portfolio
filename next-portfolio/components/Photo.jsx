@@ -22,8 +22,7 @@ const Photo = () => {
           //}}
           className="w-[298px] h-[298px] mix-blend-lighten">
           <Image
-            // src="/photo.jpeg"
-            src="/random-history.png"
+            src="/photo.jpeg"
             priority
             fill
             quality={100}
