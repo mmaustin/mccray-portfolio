@@ -7,6 +7,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -58,7 +59,6 @@ const Projects = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = swiper => {
-    console.log(swiper.activeIndex, projects.length);
     const currentIndex = swiper.activeIndex;
 
     setProject(projects[currentIndex]);
@@ -116,6 +116,9 @@ const Projects = () => {
                 return (
                   <SwiperSlide key={i} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+
+                      <div className="absolute top-0 bottom-0 w-full bg-black/10 z-20"></div>
+
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
@@ -129,6 +132,7 @@ const Projects = () => {
                   </SwiperSlide>
                 )
               })}
+              <WorkSliderBtns />
             </Swiper>
           </div>
         </div>
