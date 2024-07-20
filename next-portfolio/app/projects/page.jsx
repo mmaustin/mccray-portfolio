@@ -71,7 +71,7 @@ const Projects = () => {
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-6xl leading-none text-white/50">{project?.num}</div>
-              <h2 className="text-[42px] font-semibold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project?.category} project</h2>
+              <h2 className="text-[42px] font-semibold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project?.title}</h2>
               <p className="text-white/50">{project?.description}</p>
               <ul className="flex gap-4">
                 {project?.stack.map((item, i) => {
@@ -123,8 +123,10 @@ const Projects = () => {
                         <Image
                           src={project.image}
                           fill
+                          priority
                           style={{ objectFit: "contain" }}
                           className="object-cover"
+                          sizes="100vw"
                           alt={project.title}
                         />
                       </div>
@@ -132,7 +134,7 @@ const Projects = () => {
                   </SwiperSlide>
                 )
               })}
-              <WorkSliderBtns />
+              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none" btnStyles="bg-accent hoover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
             </Swiper>
           </div>
         </div>
