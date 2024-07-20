@@ -15,8 +15,8 @@ const projects = [
     title: "novel ideas",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic amet ipsum id sapiente aliquam autem inventore",
     stack: [
-      { name: "Next JS" },
-      { name: "TailwindCss" },
+      { name: "Next JS," },
+      { name: "TailwindCss," },
       { name: "Daisy UI" }
     ],
     image: '/novel-ideas.png',
@@ -29,8 +29,8 @@ const projects = [
     title: "writers forum",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic amet ipsum id sapiente aliquam autem inventore",
     stack: [
-      { name: "React" },
-      { name: "Express JS" },
+      { name: "React," },
+      { name: "Express JS," },
       { name: "JWT" }
     ],
     image: '/writers-forum.png',
@@ -43,8 +43,8 @@ const projects = [
     title: "random history",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic amet ipsum id sapiente aliquam autem inventore",
     stack: [
-      { name: "React" },
-      { name: "React Hooks" },
+      { name: "React," },
+      { name: "React Hooks," },
       { name: "Material UI" }
     ],
     image: '/novel-ideas.png',
@@ -63,8 +63,31 @@ const Projects = () => {
         <div className="flex flex-col lg:flex-row lg:gap-[30px">
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none">
             <div className="">
-              <div className="text-6xl leading-none ">{project.num}</div>
+              <div className="text-6xl leading-none text-white/50">{project.num}</div>
               <h2 className="text-[42px] font-semibold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
+              <p className="text-white/50">{project.description}</p>
+              <ul className="flex gap-4">
+                {project.stack.map((item, i) => {
+                  return (
+                    <li key={i} className="text-lg text-accent">{item.name}</li>
+                  )
+                })}
+              </ul>
+              <div className="border border-white"></div>
+              <div className="">
+                <Link href={project.live}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Live Project</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="w-full">slider</div>
