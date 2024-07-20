@@ -47,7 +47,7 @@ const projects = [
       { name: "React Hooks," },
       { name: "Material UI" }
     ],
-    image: '/novel-ideas.png',
+    image: '/random-history.png',
     live: "https://random-history.onrender.com",
     github: "https://github.com/mmaustin/random-history",
   },
@@ -67,7 +67,7 @@ const Projects = () => {
   return (
     <div className="min-h-[80vh] flex flex-col justify-center py-12 lg:px-0">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:gap-[30px">
+        <div className="flex flex-col lg:flex-row lg:gap-[30px]">
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-6xl leading-none text-white/50">{project?.num}</div>
@@ -114,8 +114,18 @@ const Projects = () => {
             <Swiper spaceBetween={10} slidesPerView={1} className="lg:h-[520px] mb-12" onSlideChange={handleSlideChange}>
               {projects.map((project, i) => {
                 return (
-                  <SwiperSlide key={i}>
-                    {project.title}
+                  <SwiperSlide key={i} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={project.image}
+                          fill
+                          style={{ objectFit: "contain" }}
+                          className="object-cover"
+                          alt={project.title}
+                        />
+                      </div>
+                    </div>
                   </SwiperSlide>
                 )
               })}
