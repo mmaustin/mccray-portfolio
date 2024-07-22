@@ -1,5 +1,24 @@
 import Photo from "@/components/Photo";
 import SocialMedia from "@/components/SocialMedia";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+
+const info = [
+  {
+    icon: <FaPhoneAlt />,
+    title: "Phone",
+    description: "973-634-0148"
+  },
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    description: "mccrayaustin@ymail.com"
+  },
+  {
+    icon: <FaMapMarkedAlt />,
+    title: "Address",
+    description: "5 Virginia Place, 2nd Floor, Brooklyn NY 11213"
+  }
+]
 
 const ContactPage = () => {
   return (
