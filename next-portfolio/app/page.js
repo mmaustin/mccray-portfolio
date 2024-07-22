@@ -1,10 +1,6 @@
-import Footer from "@/components/Footer";
 import MiniInfo from "@/components/MiniInfo";
 import Photo from "@/components/Photo";
 import SocialMedia from "@/components/SocialMedia";
-import { Button } from "@/components/ui/button";
-import { Fullscreen } from "lucide-react";
-import { FiDownload } from "react-icons/fi";
 
 const HomePage = () => {
   return (
