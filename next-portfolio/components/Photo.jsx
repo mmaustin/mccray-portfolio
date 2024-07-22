@@ -24,9 +24,9 @@ const Photo = () => {
           <Image
             src="/photo.jpeg"
             priority
-            style={{ objectFit: "contain" }}
+            // style={{ objectFit: "contain" }}
             fill
-            quality={100}
+            // quality={100}
             // width={100}
             // height={100}
             alt="my photo"
