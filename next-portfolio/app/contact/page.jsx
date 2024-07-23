@@ -53,7 +53,7 @@ const ContactPage = () => {
               </div> */}
             </div>
           </div>
-          <div className=" mb-8 lg:mb-0 rounded-xl border border-accent">
+          <div className=" mb-8 lg:mb-0 rounded-xl">
             <Photo />
           </div>
         </div>

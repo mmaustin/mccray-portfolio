@@ -21,7 +21,7 @@ const HomePage = () => {
               </div>
             </div> */}
           </div>
-          <div className="order-1 lg:order-none mb-8 lg:mb-0 rounded-xl border border-accent">
+          <div className="order-1 lg:order-none mb-8 lg:mb-0 rounded-xl">
             <Photo />
           </div>
         </div>

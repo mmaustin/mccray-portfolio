@@ -23,14 +23,14 @@ const Photo = () => {
           className="w-[298px] h-[298px] mix-blend-lighten">
           <Image
             src="/photo.jpeg"
-            priority
+            // priority
             // style={{ objectFit: "contain" }}
             fill
             // quality={100}
             // width={100}
             // height={100}
             alt="my photo"
-            className="object-container rounded-xl border border-accent"
+            className="object-container rounded-xl border border-accent/60"
           />
         </div>
       </div>

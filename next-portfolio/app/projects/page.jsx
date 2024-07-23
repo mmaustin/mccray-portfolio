@@ -20,7 +20,7 @@ const projects = [
       { name: "TailwindCss," },
       { name: "Daisy UI" }
     ],
-    image: '/novel-ideas.png',
+    image: '/novel-ideas-three.png',
     live: "https://project-fb.vercel.app",
     github: "https://github.com/mmaustin/project-fb",
   },
@@ -34,7 +34,7 @@ const projects = [
       { name: "Express JS," },
       { name: "JWT" }
     ],
-    image: '/writers-forum.png',
+    image: '/writers-forum-two.png',
     live: "https://writers-forum.onrender.com",
     github: "https://github.com/mmaustin/writers-forum",
   },
@@ -48,7 +48,7 @@ const projects = [
       { name: "React Hooks," },
       { name: "Material UI" }
     ],
-    image: '/random-history.png',
+    image: '/random-history-two.png',
     live: "https://random-history.onrender.com",
     github: "https://github.com/mmaustin/random-history",
   },
@@ -124,7 +124,7 @@ const Projects = () => {
                           src={project.image}
                           fill
                           priority
-                          style={{ objectFit: "contain" }}
+                          // style={{ objectFit: "contain" }}
                           className="object-cover"
                           sizes="100vw"
                           alt={project.title}
