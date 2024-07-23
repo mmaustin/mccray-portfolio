@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import { Dialog } from "@radix-ui/react-dialog";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
+
 
 const links = [
   {
@@ -39,8 +41,16 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <SheetTitle >Menu</SheetTitle>
-        <SheetDescription>Description</SheetDescription>
+        <SheetTitle >
+          <VisuallyHidden.Root>
+            Mobile Menu Title
+          </VisuallyHidden.Root>
+        </SheetTitle>
+        <SheetDescription>
+          <VisuallyHidden.Root>
+            Mobile Menu Description
+          </VisuallyHidden.Root>
+        </SheetDescription>
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h2 className="text-4xl font-semibold">
