@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import { Dialog } from "@radix-ui/react-dialog";
 
@@ -39,6 +39,8 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
+        <SheetTitle >Menu</SheetTitle>
+        <SheetDescription>Description</SheetDescription>
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h2 className="text-4xl font-semibold">
