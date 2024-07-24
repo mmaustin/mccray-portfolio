@@ -28,7 +28,7 @@ const projects = [
     num: "02",
     category: "full stack",
     title: "writers forum",
-    description: "A space for you and your fellow writers to come together and collaborate.",
+    description: "A space for you and your fellow writers to come together and collaborate. (Apologies for the slow loading time.)",
     stack: [
       { name: "React," },
       { name: "Express JS," },
