@@ -4,11 +4,10 @@ import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs,
 import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { motion } from "framer-motion";
 
 const skills = {
   title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam tempore saepe maiores quos repellendus hic, ratione animi, ab aliquam repellat, natus quo minus delectus optio labore distinctio unde reprehenderit",
+  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in Typescript, Websockets/Socket.io, Shadcn/ui, and Dynamic Programming, in addition to other technologies and concepts.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -64,7 +63,6 @@ const skills = {
 
 const SkillsPage = () => {
   return (
-    // <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .75, duration: 0.4, ease: "easeIn" } }}
     <div
       className="min-h-[80vh] flex items-center justify-center py-12 lg:py-0">
       <div className="container mx-auto">
@@ -106,7 +104,6 @@ const SkillsPage = () => {
         </Tabs>
       </div>
     </div>
-    // {/* </motion.div> */}
   )
 }
 export default SkillsPage

@@ -14,7 +14,7 @@ const projects = [
     num: "01",
     category: "full stack",
     title: "novel ideas",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic amet ipsum id sapiente aliquam autem inventore",
+    description: "Despite its name, here's a notetaking app created for writers of fiction and non-fiction alike.",
     stack: [
       { name: "Next JS," },
       { name: "TailwindCss," },
@@ -28,7 +28,7 @@ const projects = [
     num: "02",
     category: "full stack",
     title: "writers forum",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic amet ipsum id sapiente aliquam autem inventore",
+    description: "A space for you and your fellow writers to come together and collaborate.",
     stack: [
       { name: "React," },
       { name: "Express JS," },
@@ -42,7 +42,7 @@ const projects = [
     num: "03",
     category: "frontend",
     title: "random history",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla hic amet ipsum id sapiente aliquam autem inventore",
+    description: "History trivia that requires a certain depth of knowledge and dumb luck in equal measure.",
     stack: [
       { name: "React," },
       { name: "React Hooks," },
