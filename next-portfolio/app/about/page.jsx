@@ -3,15 +3,11 @@
 import { MdWorkOutline } from "react-icons/md";
 import { GiGraduateCap } from "react-icons/gi";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { motion } from "framer-motion";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
-// import { TabsContent } from "@radix-ui/react-tabs";
-
 
 const about = {
   title: "About Me",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptas nam expedita dolorum delectus voluptatum, dolores illum, excepturi eligendi dignissimos, hic quisquam quis distinctio mollitia officia dolor earum harum ea.",
+  description: "I'm passionate about everything that I pursue.  Whether I'm brainstorming my way through a book chapter, applying facts to law, or trying to understand dynamic programming, there's no other percentage but one hundred.",
   info: [
     {
       fieldName: "Name",
@@ -35,7 +31,7 @@ const about = {
 const experience = {
   icon: <MdWorkOutline />,
   title: "My Experience",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptas nam expedita dolorum delectus voluptatum, dolores illum, excepturi eligendi dignissimos, hic quisquam quis distinctio mollitia officia dolor earum harum ea.",
+  description: "Six years as a coder, Twenty years as an attorney, Nearly two decades as an amateur author. I combine the creative and analytical, the practical and aspirational. ",
   items: [
     {
       company: "Concorde Education",
@@ -53,7 +49,7 @@ const experience = {
 const education = {
   icon: <GiGraduateCap />,
   title: "My Education",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptas nam expedita dolorum delectus voluptatum, dolores illum, excepturi eligendi dignissimos, hic quisquam quis distinctio mollitia officia dolor earum harum ea.",
+  description: "I'm the beneficiary of amazing instruction at the secondary, post-secondary, and technical levels. Most important, the learning never stops!",
   items: [
     {
       institution: "Flatiron School",
@@ -88,7 +84,6 @@ const education = {
 
 const About = () => {
   return (
-    // <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .75, duration: 0.4, ease: "easeIn" } }}
     <div
       className="min-h-[80vh] flex items-center justify-center py-12 lg:py-0">
       <div className="container mx-auto">
@@ -176,7 +171,6 @@ const About = () => {
         </Tabs>
       </div>
     </div>
-    // {/* </motion.div> */}
   )
 }
 export default About;
