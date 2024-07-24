@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
 import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 
@@ -14,9 +13,6 @@ const Header = () => {
         </Link>
         <div className="hidden lg:flex items-center gap-8">
           <Navbar />
-          {/* <Link href="/contact">
-            <Button className="">Connect</Button>
-          </Link> */}
         </div>
         <div className="lg:hidden">
           <MobileNav />

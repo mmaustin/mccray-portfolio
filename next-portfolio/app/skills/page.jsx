@@ -7,7 +7,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 const skills = {
   title: "My Skills",
-  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in Typescript, Websockets/Socket.io, Shadcn/ui, and Dynamic Programming, in addition to other technologies and concepts.",
+  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in Typescript, Websockets/Socket.io, Shadcn/ui, and Dynamic Programming, along with other technologies and concepts.",
   skillList: [
     {
       icon: <FaHtml5 />,
