@@ -3,7 +3,6 @@
 import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb } from "react-icons/si";
 import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const skills = {
   title: "My Skills",
@@ -11,11 +10,11 @@ const skills = {
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "html 5"
+      name: "HTML 5"
     },
     {
       icon: <FaCss3 />,
-      name: "css 3"
+      name: "CSS 3"
     },
     {
       icon: <SiJavascript />,
@@ -23,19 +22,19 @@ const skills = {
     },
     {
       icon: <FaNodeJs />,
-      name: "node.js"
+      name: "node"
     },
     {
       icon: <FaReact />,
-      name: "react.js"
+      name: "react"
     },
     {
       icon: <SiRedux />,
-      name: "redux.js"
+      name: "redux"
     },
     {
       icon: <SiNextdotjs />,
-      name: "next.js"
+      name: "next"
     },
     {
       icon: <SiMongodb />,
@@ -51,11 +50,11 @@ const skills = {
     },
     {
       icon: <SiTailwindcss />,
-      name: "tailwind.css"
+      name: "tailwindCSS"
     },
     {
       icon: <SiDaisyui />,
-      name: "daisy.ui"
+      name: "daisyUI"
     },
   ]
 };
@@ -84,16 +83,10 @@ const SkillsPage = () => {
                   {skills.skillList.map((skill, i) => {
                     return (
                       <li key={i}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-4xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
+                        <div className="w-full h-[150px] bg-[#232329] rounded-xl flex flex-col justify-center items-center group gap-4">
+                          <div className="text-4xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                          <p className="capitalize text-accent/40">{skill.name}</p>
+                        </div>
                       </li>
                     )
                   })}
