@@ -50,14 +50,7 @@ const MobileNav = () => {
             Mobile Menu Description
           </VisuallyHidden.Root>
         </SheetDescription>
-        <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href="/">
-            <h2 className="text-4xl font-semibold">
-              McCray<span className="text-accent">.</span>
-            </h2>
-          </Link>
-        </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="mt-32 flex flex-col justify-center items-center gap-8">
           {links.map((link, i) => {
             return (
               <SheetClose key={i} asChild>
