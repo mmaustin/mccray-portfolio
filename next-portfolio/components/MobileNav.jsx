@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription, SheetClose } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
@@ -60,7 +60,9 @@ const MobileNav = () => {
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, i) => {
             return (
-              <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
+              <SheetClose key={i} asChild>
+                <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
+              </SheetClose>
             )
           })}
         </nav>
