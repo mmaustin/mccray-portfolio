@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import img from "@/public/photo.jpeg";
 
 const Photo = () => {
   return (
@@ -11,10 +11,11 @@ const Photo = () => {
         <div
           className="w-[298px] h-[298px] mix-blend-lighten">
           <Image
-            src="/photo.jpeg"
-            fill
+            src={img}
+            // width={192}
+            // height={192}
             alt="my photo"
-            className="object-container rounded-xl border border-accent/60"
+            className="object-cover rounded-xl border border-accent/60"
           />
         </div>
       </div>
