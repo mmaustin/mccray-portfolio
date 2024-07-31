@@ -15,7 +15,7 @@ const HomePage = () => {
               I love to code, create, and collaborate with dynamic individuals and institutions.  Let's excel together!
             </p>
           </div>
-          <div className="order-1 lg:order-none mb-8 lg:mb-0 rounded-xl">
+          <div className="border order-1 lg:order-none mb-8 lg:mb-0 rounded-xl">
             <Photo />
           </div>
         </div>
