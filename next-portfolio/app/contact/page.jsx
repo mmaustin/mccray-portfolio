@@ -57,6 +57,7 @@ const ContactPage = () => {
             <Photo />
           </div>
         </div>
+        {/* <p><a href="mailto:mccrayaustin@ymail.com">Send email</a></p> */}
       </div>
     </section>
   )
