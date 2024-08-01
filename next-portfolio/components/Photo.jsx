@@ -5,16 +5,17 @@ import img from "@/public/photo.jpeg";
 
 const Photo = () => {
   return (
-    <div className="border w-full h-full">
+    <div className="w-full h-full relative">
       <div>
         <div
-          className="border border-red-700 w-[298px] h-[298px] mix-blend-lighten">
+          className="w-[298px] h-[298px] mix-blend-lighten relative">
           <Image
             src={img}
-            // width={192}
-            // height={192}
+            fill
+            sizes="20vw"
+            priority
             alt="my photo"
-            className="container rounded-xl border border-accent/60"
+            className="object-cover rounded-xl"
           />
         </div>
       </div>
