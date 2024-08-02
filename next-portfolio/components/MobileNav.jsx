@@ -41,18 +41,18 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex items-center flex-col mt-20">
         <SheetTitle >
           <VisuallyHidden.Root>
             Mobile Menu Title
           </VisuallyHidden.Root>
         </SheetTitle>
-        <SheetDescription>
+        <SheetDescription >
           <VisuallyHidden.Root>
             Mobile Menu Description
           </VisuallyHidden.Root>
         </SheetDescription>
-        <ScrollArea className="h-72 w-48 rounded-md border">
+        <ScrollArea className="h-52 w-48 rounded-md border border-accent mt-20">
           <nav className="mt-32 flex flex-col justify-center items-center gap-8">
             {links.map((link, i) => {
               return (
