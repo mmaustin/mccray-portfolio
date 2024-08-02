@@ -6,7 +6,6 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription, SheetC
 import { CiMenuFries } from "react-icons/ci";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { ScrollArea } from "./ui/scroll-area";
-import { Separator } from "./ui/separator";
 
 
 const links = [
