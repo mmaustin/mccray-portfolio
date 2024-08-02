@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription, SheetClose } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
+import { ScrollArea } from "./ui/scroll-area";
+import { Separator } from "./ui/separator";
 
 
 const links = [
@@ -50,15 +52,17 @@ const MobileNav = () => {
             Mobile Menu Description
           </VisuallyHidden.Root>
         </SheetDescription>
-        <nav className="mt-32 flex flex-col justify-center items-center gap-8">
-          {links.map((link, i) => {
-            return (
-              <SheetClose key={i} asChild>
-                <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
-              </SheetClose>
-            )
-          })}
-        </nav>
+        <ScrollArea className="h-72 w-48 rounded-md border">
+          <nav className="mt-32 flex flex-col justify-center items-center gap-8">
+            {links.map((link, i) => {
+              return (
+                <SheetClose key={i} asChild>
+                  <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
+                </SheetClose>
+              )
+            })}
+          </nav>
+        </ScrollArea>
       </SheetContent>
     </Sheet>
   )
