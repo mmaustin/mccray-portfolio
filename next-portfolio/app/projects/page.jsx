@@ -8,6 +8,9 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
+import novelIdeas from "@/public/novel-ideas-three.png";
+import wfBig from "@/public/wf-big.png";
+import randomHistory from "@/public/random-history-two.png";
 
 const projects = [
   {
@@ -20,7 +23,7 @@ const projects = [
       { name: "TailwindCss," },
       { name: "Daisy UI" }
     ],
-    image: '/novel-ideas-three.png',
+    image: novelIdeas,
     live: "https://project-fb.vercel.app",
     github: "https://github.com/mmaustin/project-fb",
   },
@@ -34,7 +37,7 @@ const projects = [
       { name: "Express JS," },
       { name: "JWT" }
     ],
-    image: '/writers-forum-two.png',
+    image: wfBig,
     live: "https://writers-forum.onrender.com",
     github: "https://github.com/mmaustin/writers-forum",
   },
@@ -48,7 +51,7 @@ const projects = [
       { name: "React Hooks," },
       { name: "Material UI" }
     ],
-    image: '/random-history-two.png',
+    image: randomHistory,
     live: "https://random-history.onrender.com",
     github: "https://github.com/mmaustin/random-history",
   },
@@ -110,7 +113,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[50%]">
+          <div className="my-5 w-full lg:w-[50%]">
             <Swiper spaceBetween={10} slidesPerView={1} className="lg:h-[520px] mb-12" onSlideChange={handleSlideChange}>
               {projects.map((project, i) => {
                 return (
