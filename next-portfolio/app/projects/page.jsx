@@ -76,7 +76,7 @@ const Projects = () => {
               <div className="text-6xl leading-none text-white/50">{project?.num}</div>
               <h2 className="text-[42px] font-semibold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project?.title}</h2>
               <p className="text-white/50">{project?.description}</p>
-              <ul className="flex justify-between">
+              <ul className="flex flex-col md:flex-row md:justify-around">
                 {project?.stack.map((item, i) => {
                   return (
                     <li key={i} className="text-lg text-accent">{item.name}</li>
