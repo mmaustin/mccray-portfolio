@@ -1,3 +1,4 @@
+import EmailLink from "@/components/Email";
 import Photo from "@/components/Photo";
 import SocialMedia from "@/components/SocialMedia";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
@@ -11,7 +12,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "mccrayaustin@ymail.com"
+    description: <EmailLink />
   },
   {
     icon: <FaMapMarkedAlt />,
