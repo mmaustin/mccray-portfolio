@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 
 const PageTransition = ({ children }) => {
 
-  const pathName = usePathname();
 
+  const pathName = usePathname();
   return (
     <AnimatePresence>
       <div key={pathName}>
