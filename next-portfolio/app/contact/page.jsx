@@ -28,7 +28,7 @@ const ContactPage = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           <div className="lg:w-[54%] text-center lg:text-left ">
             <div className="flex-1 flex flex-col items-center lg:justify-end mb-8">
-              <ul className="flex flex-col gap-10">
+              <ul className="flex flex-col gap-5 md:gap-10 my-6 justify-center items center">
                 {info.map((item, i) => {
                   return (
                     <li key={i} className="flex items-center gap-6">
