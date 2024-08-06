@@ -7,7 +7,7 @@ const information = [
   },
   {
     header: "Coding Advocate",
-    info: "Hundreds Tutored"
+    info: "100s Tutored"
   },
   {
     header: "Github Commits",
@@ -17,15 +17,15 @@ const information = [
 
 const MiniInfo = () => {
   return (
-    <section className="border pt-4 pb-12 lg:pt-0 lg:pb-8">
-      <div className=" border border-blue-600 container mx-auto">
+    <section className="pt-4 pb-12 lg:pt-0 lg:pb-8">
+      <div className="container mx-auto">
         {/* flex flex-col justify-center items-center */}
-        <div className="border flex flex-col items-center md:flex-row md:justify-around md:items-center gap-6 ">
+        <div className="flex flex-col items-center md:flex-row md:justify-around md:items-start gap-6 ">
           {information.map((obj, i) => {
             return (
-              <div key={i} className="">
+              <div key={i} className="flex flex-col justify-center items-center">
                 <p className="text-xl lg:text-xl font-extrabold">{obj.header}:</p>
-                <p className={`${obj.info.length ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-accent/50`}>{obj.info}</p>
+                <p className={`${obj.info.length ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-accent/50 text-center`}>{obj.info}</p>
               </div>
             )
           })}

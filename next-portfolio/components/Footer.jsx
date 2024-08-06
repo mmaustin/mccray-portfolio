@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="w-full flex flex-col md:flex-row md:justify-between items-center">
           <div className="">
-            <SocialMedia containerStyles="flex gap-6 mb-4 md:mb-0" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent/55 text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" />
+            <SocialMedia containerStyles="flex gap-6 mb-4 md:mb-0" iconStyles="w-6 h-6 border border-accent rounded-full flex justify-center items-center text-accent/55 text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" />
           </div>
           <div className="flex flex-row justify-center items-center gap-2 mb-4 md:mb-0">
             <FaCopyright className="rounded-lg" />
