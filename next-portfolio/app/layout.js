@@ -18,11 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jetBrainsMono.variable}>
+      <body className={`${jetBrainsMono.variable} flex flex-col min-h-screen`}>
         <Header />
-        {/* <PageTransition> */}
-        {children}
-        {/* </PageTransition> */}
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
