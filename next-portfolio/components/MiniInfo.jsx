@@ -17,9 +17,10 @@ const information = [
 
 const MiniInfo = () => {
   return (
-    <section className="pt-4 pb-12 lg:pt-0 lg:pb-8">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto lg:max-w-none">
+    <section className="border pt-4 pb-12 lg:pt-0 lg:pb-8">
+      <div className=" border border-blue-600 container mx-auto">
+        {/* flex flex-col justify-center items-center */}
+        <div className="border flex flex-col items-center md:flex-row md:justify-around md:items-center gap-6 ">
           {information.map((obj, i) => {
             return (
               <div key={i} className="">
