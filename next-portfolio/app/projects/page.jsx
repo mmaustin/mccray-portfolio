@@ -105,7 +105,7 @@ const Projects = () => {
                         <BsGithub className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Github Repo</p>
+                        <p>GitHub Repo</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

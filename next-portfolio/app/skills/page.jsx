@@ -1,7 +1,7 @@
 'use client';
 
-import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb } from "react-icons/si";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb, SiShadcnui, SiTypescript, SiReactquery } from "react-icons/si";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaStripe } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const skills = {
@@ -18,7 +18,11 @@ const skills = {
     },
     {
       icon: <SiJavascript />,
-      name: "javascript"
+      name: "javaScript"
+    },
+    {
+      icon: <SiTypescript />,
+      name: "typeScript"
     },
     {
       icon: <FaNodeJs />,
@@ -27,6 +31,10 @@ const skills = {
     {
       icon: <FaReact />,
       name: "react"
+    },
+    {
+      icon: <SiReactquery />,
+      name: "react-Query"
     },
     {
       icon: <SiRedux />,
@@ -55,6 +63,14 @@ const skills = {
     {
       icon: <SiDaisyui />,
       name: "daisyUI"
+    },
+    {
+      icon: <SiShadcnui />,
+      name: "shadcnUI"
+    },
+    {
+      icon: <FaStripe />,
+      name: "stripe"
     },
   ]
 };
