@@ -51,7 +51,7 @@ const MobileNav = () => {
             Mobile Menu Description
           </VisuallyHidden.Root>
         </SheetDescription>
-        <ScrollArea className="h-52 w-48 rounded-md border border-accent mt-10">
+        <ScrollArea className="h-32 w-48 rounded-md border border-accent mt-10">
           <nav className="mt-2 flex flex-col justify-center items-center gap-8">
             {links.map((link, i) => {
               return (
