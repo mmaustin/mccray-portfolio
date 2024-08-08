@@ -1,12 +1,12 @@
 'use client';
 
-import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb, SiShadcnui, SiTypescript, SiReactquery } from "react-icons/si";
+import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb, SiShadcnui, SiTypescript, SiReactquery, SiRubyonrails } from "react-icons/si";
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaStripe } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const skills = {
   title: "My Skills",
-  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in Typescript, Websockets/Socket.io, Shadcn/ui, and Dynamic Programming, along with other technologies and concepts.",
+  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in other technologies and concepts includeing Dynamic Programming, Websockets/Socket.io, and Swift Programming.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -61,16 +61,16 @@ const skills = {
       name: "tailwindCSS"
     },
     {
-      icon: <SiDaisyui />,
-      name: "daisyUI"
-    },
-    {
       icon: <SiShadcnui />,
       name: "shadcnUI"
     },
     {
       icon: <FaStripe />,
       name: "stripe"
+    },
+    {
+      icon: <SiRubyonrails />,
+      name: "ruby On Rails"
     },
   ]
 };
