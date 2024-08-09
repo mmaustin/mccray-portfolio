@@ -1,6 +1,6 @@
 'use client';
 
-import { SiDaisyui, SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb, SiShadcnui, SiTypescript, SiReactquery, SiRubyonrails } from "react-icons/si";
+import { SiJavascript, SiRedux, SiTailwindcss, SiPrisma, SiNextdotjs, SiPostman, SiMongodb, SiShadcnui, SiTypescript, SiReactquery, SiRubyonrails } from "react-icons/si";
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaStripe } from "react-icons/fa";
 import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 

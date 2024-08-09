@@ -19,7 +19,6 @@ const MiniInfo = () => {
   return (
     <section className="pt-4 pb-12 lg:pt-0 lg:pb-8">
       <div className="container mx-auto">
-        {/* flex flex-col justify-center items-center */}
         <div className="flex flex-col items-center md:flex-row md:justify-around md:items-start gap-6 ">
           {information.map((obj, i) => {
             return (

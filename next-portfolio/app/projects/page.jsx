@@ -127,7 +127,6 @@ const Projects = () => {
                           src={project.image}
                           fill
                           priority
-                          // style={{ objectFit: "contain" }}
                           className="object-cover"
                           sizes="100vw"
                           alt={project.title}
