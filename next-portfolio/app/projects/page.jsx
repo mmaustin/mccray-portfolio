@@ -70,7 +70,7 @@ const Projects = () => {
   return (
     <div className="min-h-[80vh] flex flex-col justify-center py-12 lg:px-0">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-[70px]">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-8">
           <div className="w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none">
             <div className="flex flex-col gap-[30px] h-[50%] text-center">
               <div className="text-6xl leading-none text-white/50">{project?.num}</div>
@@ -113,38 +113,23 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="my-5 w-[350px] h-[250px]">
+          <div className="my-5 w-[250px] h-[200px] sm:w-[350px] sm:h-[250px]">
             <Swiper spaceBetween={10} slidesPerView={1} className="lg:h-[250px] mb-12" onSlideChange={handleSlideChange}>
               {projects.map((project, i) => {
                 return (
                   <SwiperSlide key={i} className="w-full">
-                    {/* <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 border border-red-500"> */}
-
-                    {/* <div className="absolute top-0 bottom-0 w-full bg-black/10 z-20 border border-red-400"></div> */}
-
-                    {/* <div className="relative w-full h-full"> */}
-                    {/* <Image
-                            src={project.image}
-                            fill
-                            priority
-                            className="object-cover"
-                            sizes="100vw"
-                            alt={project.title}
-                          /> */}
                     <Image
-                      className="h-[250px] w-[350px]"
+                      className="h-[200px] sm:h-[250px] w-[250px] sm:w-[350px]"
                       src={project.image}
                       alt={project.title}
                       priority
                       height={265}
                       width={198}
                     />
-                    {/* </div> */}
-                    {/* </div> */}
                   </SwiperSlide>
                 )
               })}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:w-max lg:justify-none" btnStyles="bg-accent hoover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
+              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0  bottom-0 z-20 w-full justify-between w-max justify-none" btnStyles="bg-accent hoover:bg-accent-hover text-primary text-[12px] w-[24px] h-[24px] flex justify-center items-center transition-all" />
             </Swiper>
           </div>
         </div>
