@@ -38,8 +38,8 @@ const projects = [
       { name: "Typescript" }
     ],
     image: wfBig,
-    live: "https://writers-forum.onrender.com",
-    github: "https://github.com/mmaustin/writers-forum",
+    live: "https://job-tracker-five.vercel.app/",
+    github: "https://github.com/mmaustin/job-tracker",
   },
   {
     num: "03",
@@ -52,8 +52,8 @@ const projects = [
       { name: "Tailwind" }
     ],
     image: randomHistory,
-    live: "https://random-history.onrender.com",
-    github: "https://github.com/mmaustin/random-history",
+    live: "https://brig-uncas.vercel.app/",
+    github: "https://github.com/mmaustin/brig-uncas",
   },
 ];
 

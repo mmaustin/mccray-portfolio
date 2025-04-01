@@ -70,7 +70,7 @@ const skills = {
     },
     {
       icon: <SiRubyonrails />,
-      name: "ruby On Rails"
+      name: "ruby"
     },
   ]
 };
