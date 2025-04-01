@@ -20,7 +20,7 @@ const projects = [
     description: "Despite its name, here's a notetaking app created for writers of fiction and non-fiction alike.",
     stack: [
       { name: "Next JS," },
-      { name: "TailwindCss," },
+      { name: "Tailwind," },
       { name: "Daisy UI" }
     ],
     image: novelIdeas,
@@ -30,12 +30,12 @@ const projects = [
   {
     num: "02",
     category: "full stack",
-    title: "writers forum",
-    description: "A space for you and your fellow writers to come together and collaborate. (Apologies for the slow loading time.)",
+    title: "job tracker",
+    description: "Track the status of all of your job applications right here!",
     stack: [
-      { name: "React," },
-      { name: "Express JS," },
-      { name: "JWT" }
+      { name: "Next JS," },
+      { name: "Tailwind," },
+      { name: "Typescript" }
     ],
     image: wfBig,
     live: "https://writers-forum.onrender.com",
@@ -44,12 +44,12 @@ const projects = [
   {
     num: "03",
     category: "frontend",
-    title: "random history",
-    description: "History trivia that requires a certain depth of knowledge and dumb luck in equal measure.",
+    title: "brig uncas",
+    description: "Follow one voyage of the Brig Uncas as it takes enslaved people from Alexandria, VA to New Orleans, LA.",
     stack: [
-      { name: "React," },
-      { name: "React Hooks," },
-      { name: "Material UI" }
+      { name: "Next JS," },
+      { name: "Shadcn UI," },
+      { name: "Tailwind" }
     ],
     image: randomHistory,
     live: "https://random-history.onrender.com",
