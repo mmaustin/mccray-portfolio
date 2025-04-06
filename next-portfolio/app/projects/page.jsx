@@ -113,8 +113,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="my-5 w-[250px] h-[200px] sm:w-[350px] sm:h-[300px]">
-            <Swiper spaceBetween={10} slidesPerView={1} className="lg:h-[300px] mb-12 bg-slate-500" onSlideChange={handleSlideChange}>
+          <div className="mb-6 w-[250px] h-[254px] sm:w-[350px] sm:h-[304px]">
+            <Swiper spaceBetween={10} slidesPerView={1} className="h-[250px] sm:h-[300px]" onSlideChange={handleSlideChange}>
               {projects.map((project, i) => {
                 return (
                   <SwiperSlide key={i} className="w-full">
@@ -129,9 +129,13 @@ const Projects = () => {
                   </SwiperSlide>
                 )
               })}
+              {/* current styles */}
               {/* <WorkSliderBtns containerStyles="flex gap-2 absolute right-0  bottom-0 z-20 w-full justify-between w-max justify-none" btnStyles="bg-accent hoover:bg-accent-hover text-primary text-[12px] w-[24px] h-[24px] flex justify-center items-center transition-all" /> */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] lg:bottom-0 z-20 w-full justify-between lg:justify-none" btnStyles="bg-accent hoover:bg-accent-hover text-primary text-[22px] w-[44px] h-[50px] flex justify-center items-center transition-all" />
+
+              {/* buttons bottom */}
+              <WorkSliderBtns containerStyles=" flex gap-2 items-center absolute  bottom-0 z-20 w-full justify-center" btnStyles="bg-accent/50 text-black hover:text-white text-[22px] w-[44px] h-[50px] flex justify-center items-center transition-all" />
             </Swiper>
+            <p className="text-center text-sm mt-4 text-accent/50">scroll projects</p>
           </div>
         </div>
       </div>
