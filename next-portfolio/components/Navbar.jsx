@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className="flex gap-8">
       {links.map((link, i) => {
         return (
-          <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent"} capitalize font-medium hoover:text-accent`}>{link.name}</Link>
+          <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent/50 border-b-2 border-accent/50"} capitalize font-medium hover:text-accent/50`}>{link.name}</Link>
         )
       })}
     </nav>

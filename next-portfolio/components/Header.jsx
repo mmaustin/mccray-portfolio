@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto flex flex-col items-center md:flex-row justify-between">
         <Link href="/">
           <h2 className="text-4xl font-semibold">
-            McCray<span className="text-accent">.</span>
+            McCray<span className="text-accent/50">.</span>
           </h2>
         </Link>
         <div className="hidden lg:flex items-center gap-8">

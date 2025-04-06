@@ -39,7 +39,7 @@ const ContactPage = () => {
                       </div>
                       <div className="flex-1">
                         <p className="text-white/70">{item.title}</p>
-                        <h3 className="text-xl text-accent">{item.description}</h3>
+                        <h3 className="text-xl text-accent/50">{item.description}</h3>
                       </div>
                     </li>
                   )

@@ -108,7 +108,7 @@ const About = () => {
                     {experience.items.map((item, i) => {
                       return (
                         <li key={i} className="bg-[#232329] h-[185px] lg:h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                          <span className="text-accent">{item.duration}</span>
+                          <span className="text-accent/50">{item.duration}</span>
                           <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                           <div className="">
                             <span></span>
@@ -133,7 +133,7 @@ const About = () => {
                     {education.items.map((item, i) => {
                       return (
                         <li key={i} className="bg-[#232329] h-[185px] lg:h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                          <span className="text-accent">{item.completion}</span>
+                          <span className="text-accent/50">{item.completion}</span>
                           <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{item.field}</h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
