@@ -38,7 +38,7 @@ const MobileNav = () => {
   return (
     <Sheet className={cn('bg-slate-300')}>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+        <CiMenuFries className="text-[32px] text-accent/50" />
       </SheetTrigger>
       <SheetContent className="flex items-center flex-col mt-0 border">
         <SheetTitle >
@@ -54,21 +54,10 @@ const MobileNav = () => {
         {links.map((link, i) => {
           return (
             <SheetClose key={i} asChild>
-              <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent text-lg"} m-0 text-base capitalize hover:text-accent transition-all`}>{link.name}</Link>
+              <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent/50 border-b-2 border-accent/50 text-base"} text-xs capitalize hover:text-accent/50`}>{link.name}</Link>
             </SheetClose>
           )
         })}
-        {/* <ScrollArea className="h-32 w-48 rounded-md border border-accent mt-10">
-          <nav className="mt-2 flex flex-col justify-center items-center gap-8">
-            {links.map((link, i) => {
-              return (
-                <SheetClose key={i} asChild>
-                  <Link key={i} href={link.path} className={`${link.path === pathName && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}>{link.name}</Link>
-                </SheetClose>
-              )
-            })}
-          </nav>
-        </ScrollArea> */}
       </SheetContent>
     </Sheet>
   )
