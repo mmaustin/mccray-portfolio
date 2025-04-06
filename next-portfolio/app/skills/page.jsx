@@ -6,7 +6,7 @@ import { TabsList, Tabs, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const skills = {
   title: "My Skills",
-  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in other technologies and concepts includeing Dynamic Programming, Socket.io, and Swift Programming.",
+  description: "In addition to the skills listed below, I'm currently working to improve my knowledge and abilities in other technologies and concepts including Dynamic Programming, Socket.io, and Swift Programming.",
   skillList: [
     {
       icon: <FaHtml5 />,
