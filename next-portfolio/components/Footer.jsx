@@ -18,9 +18,10 @@ const Footer = () => {
             <p className=" text-accent/55">{year}</p>
             <p className=" text-accent/55">McCray Austin</p>
           </div>
-          <div className="text-accent/55 flex flex-row justify-center items-center gap-6">
+          <div className="text-accent/55 flex flex-row justify-center items-center gap-2">
+            <p>Email:</p>
             <p ><a href="mailto:mccrayaustin@ymail.com"><FaEnvelope /></a></p>
-            <p><a href="tel:19736340148"><FaPhoneAlt /></a></p>
+            {/* <p><a href="tel:19736340148"><FaPhoneAlt /></a></p> */}
           </div>
         </div>
       </div>

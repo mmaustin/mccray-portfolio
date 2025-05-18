@@ -1,13 +1,14 @@
 import EmailLink from "@/components/EmailLink";
-import PhoneLink from "@/components/PhoneLink";
 import Photo from "@/components/Photo";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import { IoCodeSlashSharp } from "react-icons/io5";
+
 
 const info = [
   {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: <PhoneLink />
+    icon: <IoCodeSlashSharp />,
+    title: <p className=" text-3xl">Web Developer</p>,
+    description: ""
   },
   {
     icon: <FaEnvelope />,
@@ -17,7 +18,7 @@ const info = [
   {
     icon: <FaMapMarkedAlt />,
     title: "Address",
-    description: "5 Virginia Place, Brooklyn NY 11213"
+    description: "Brooklyn NY 11213"
   }
 ]
 
