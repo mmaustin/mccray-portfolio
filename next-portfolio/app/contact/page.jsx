@@ -7,7 +7,7 @@ import { IoCodeSlashSharp } from "react-icons/io5";
 const info = [
   {
     icon: <IoCodeSlashSharp />,
-    title: <p className=" text-3xl">Software Engineer</p>,
+    title: <p className="text-accent text-3xl">Software Engineer</p>,
     description: ""
   },
   {
