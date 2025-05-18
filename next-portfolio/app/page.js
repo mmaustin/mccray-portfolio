@@ -10,7 +10,7 @@ const HomePage = () => {
             <h1 className="h1 mb-4">
               McCray Austin
             </h1>
-            <p className="text-4xl text-accent mb-4">Web Developer</p>
+            <p className="text-4xl text-accent mb-4">Software Engineer</p>
             <p className="max-w-[500px] mb-9 text-white/80">
               I love to code, create, and collaborate with dynamic individuals and institutions.  Let's excel together!
             </p>
