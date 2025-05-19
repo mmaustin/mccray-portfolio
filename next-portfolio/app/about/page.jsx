@@ -7,7 +7,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const about = {
   title: "About Me",
-  description: "I'm passionate about everything that I pursue.  Whether I'm brainstorming my way through a book chapter, applying facts to law, or trying to understand dynamic programming, there's no other percentage but one hundred.",
+  description: "I'm a Software Engineer dedicated to engineering technologically advanced applications that help users organize, achieve goals, and galvanize interest and discussion. My interest in engineering was sparked by a New York City College of Technology flier that advertised HTML and CSS classes. After an adulthood steeped in the humanities and law and with minimal technical skills and even less technical knowledge, I eagerly began expanding my skills and knowledge base. The learning never stops!",
   info: [
     {
       fieldName: "Name",
