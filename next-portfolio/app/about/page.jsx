@@ -21,10 +21,6 @@ const about = {
       fieldName: "Location",
       fieldValue: "Brooklyn, NY"
     },
-    {
-      fieldName: "Telephone",
-      fieldValue: "973-634-0148"
-    },
   ],
 };
 
@@ -59,7 +55,7 @@ const education = {
     {
       institution: "Skillcruch",
       field: "Front End Developer",
-      completion: "2019"
+      completion: "2019, 2025"
     },
     {
       institution: "Udemy",
@@ -67,13 +63,13 @@ const education = {
       completion: "Continuous"
     },
     {
-      institution: "Fordham Law",
+      institution: "Fordham Law School",
       field: "Law",
       completion: "May 2004"
     },
     {
-      institution: "Seton Hall",
-      field: "English",
+      institution: "Seton Hall University",
+      field: "BA, English",
       completion: "May 2000"
     },
   ]
@@ -112,7 +108,6 @@ const About = () => {
                           <h3 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                           <div className="">
                             <span></span>
-                            {/* <p>{item.company}</p> */}
                           </div>
                         </li>
                       )
